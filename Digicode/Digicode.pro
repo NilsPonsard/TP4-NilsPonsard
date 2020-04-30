@@ -12,9 +12,10 @@ SOURCES += \
     kbhit.cpp \
     main.cpp \
     Alarme.cpp \
-    Capteur.cpp
+    Capteur.cpp \
+    Clavier.cpp
 
-    
+
 HEADERS += \
     Archivage.h \
     BD.h \
@@ -23,4 +24,5 @@ HEADERS += \
     kbhit.h \
     ObjetTempo.h \
     Alarme.h \
-    Capteur.h
+    Capteur.h \
+    Clavier.h
