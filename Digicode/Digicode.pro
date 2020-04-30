@@ -11,8 +11,10 @@ SOURCES += \
     InterfaceDeSaisie.cpp \
     kbhit.cpp \
     main.cpp \
-    Alarme.cpp
+    Alarme.cpp \
+    Capteur.cpp
 
+    
 HEADERS += \
     Archivage.h \
     BD.h \
@@ -20,4 +22,5 @@ HEADERS += \
     InterfaceDeSaisie.h \
     kbhit.h \
     ObjetTempo.h \
-    Alarme.h
+    Alarme.h \
+    Capteur.h
