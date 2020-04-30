@@ -3,16 +3,27 @@
 
 #include "Chrono.h"
 
-namespace nsDigicode {
+namespace nsDigicode
+{
 
-	class ObjetTempo 
-    {
-    public:
-        Chrono* getChrono() {}
-        void finTempo() {}
-        int getDelai() {}
-    };
-	
-} /* ns_Digicode */
+class ObjetTempo
+{
+protected:
+    bool attente;
+    Chrono *leChrono;
+
+private:
+    int delai;
+
+public:
+    ObjetTempo(Chrono *c, const int &);
+    ~ObjetTempo();
+
+    Chrono *getChrono();
+    void finTempo();
+    int getDelai();
+};
+
+} // namespace nsDigicode
 
 #endif /* _OBJETTEMPO */
