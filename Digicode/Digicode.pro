@@ -13,7 +13,8 @@ SOURCES += \
     main.cpp \
     Alarme.cpp \
     Capteur.cpp \
-    Clavier.cpp
+    Clavier.cpp \
+    Voyant.cpp
 
 
 HEADERS += \
@@ -25,4 +26,5 @@ HEADERS += \
     ObjetTempo.h \
     Alarme.h \
     Capteur.h \
-    Clavier.h
+    Clavier.h \
+    Voyant.h
