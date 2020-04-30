@@ -4,6 +4,7 @@
 #include "Capteur.h"
 #include "Clavier.h"
 #include "Voyant.h"
+#include "Systeme.h"
 using namespace std;
 
 int main(void)
@@ -12,7 +13,10 @@ int main(void)
     nsDigicode::Alarme a = nsDigicode::Alarme();
     nsDigicode::Capteur c = nsDigicode::Capteur();
     nsDigicode::Clavier cl = nsDigicode::Clavier();
-    cout << v.getStatut() << endl;
+    nsDigicode::BD base_donnees = nsDigicode::BD();
 
+    nsDigicode::Archivage archive = nsDigicode::Archivage();
+
+    nsDigicode::Systeme systeme = nsDigicode::Systeme(&base_donnees, &archive);
     return 0;
 }

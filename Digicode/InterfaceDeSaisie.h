@@ -1,16 +1,28 @@
+#include <string>
+#include "ObjetTempo.h"
+#include "Voyant.h"
+#include "Clavier.h"
 #ifndef _INTERFACE
 #define _INTERFACE
-#include <string>
 
-namespace nsDigicode {
+namespace nsDigicode
+{
 
-	class InterfaceDeSaisie //To do
-	{
-		//To do
-		void statut(std::string="\n");
-		//To do
-	}; // InterfaceDeSaisie
-	
-} /* ns_Digicode */
+class InterfaceDeSaisie : public ObjetTempo
+{
+private:
+	int nbChiffresAttendus;
+	void statut(std::string = "\n");
+	Clavier clavier;
+	Voyant leVoyantVert;
+	Voyant leVoyantRouge;
+
+public:
+	InterfaceDeSaisie(Chrono *, int, int);
+	int saisirCode();
+
+}; // InterfaceDeSaisie
+
+} // namespace nsDigicode
 
 #endif /* _INTERFACE */

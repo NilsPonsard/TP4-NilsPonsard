@@ -13,5 +13,5 @@ public:
     void declencher();
     ~Alarme();
 };
-#endif
 } // namespace nsDigicode
+#endif

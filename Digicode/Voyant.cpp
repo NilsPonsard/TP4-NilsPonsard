@@ -19,3 +19,13 @@ std::string nsDigicode::Voyant::getStatut()
         return "OFF";
     }
 }
+
+void nsDigicode::Voyant::allumer()
+{
+    statut = allume;
+}
+
+void nsDigicode::Voyant::eteindre()
+{
+    statut = eteint;
+}

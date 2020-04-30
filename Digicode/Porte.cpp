@@ -1,3 +1,4 @@
+#include <iostream>
 #include "unistd.h"
 #include "Porte.h"
 #include "Capteur.h"
@@ -12,9 +13,12 @@ bool nsDigicode::Porte::ouvrir()
     leChrono->demarrer(this);
     int k = 0;
     Capteur c = Capteur();
+
     while (attente && k == 0)
     {
         k = c.Detecter();
+        std::cout << k;
+        std::cout.flush();
         sleep(1);
     }
     if (k != 0)
@@ -29,6 +33,7 @@ bool nsDigicode::Porte::fermer()
     Capteur c = Capteur();
     while (attente && k == 0)
     {
+        std::cout << k;
         k = c.Detecter();
         sleep(1);
     }

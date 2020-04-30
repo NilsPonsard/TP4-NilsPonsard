@@ -16,7 +16,8 @@ SOURCES += \
     Clavier.cpp \
     Voyant.cpp \
     ObjetTempo.cpp \
-    Porte.cpp
+    Porte.cpp \
+    Systeme.cpp
 
 
 HEADERS += \
@@ -30,4 +31,5 @@ HEADERS += \
     Capteur.h \
     Clavier.h \
     Voyant.h \
-    Porte.h
+    Porte.h \
+    Systeme.h

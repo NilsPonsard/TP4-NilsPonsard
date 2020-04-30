@@ -25,6 +25,8 @@ private:
 public:
     Voyant(const Etat &e, const Couleur &c);
     std::string getStatut();
+    void allumer();
+    void eteindre();
     ~Voyant();
 };
 
